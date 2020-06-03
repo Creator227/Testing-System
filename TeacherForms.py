@@ -145,7 +145,7 @@ class ViewGradeBookForm(tk.Toplevel):
         self.focus_set()
 
     def init_child(self):
-        self.title('Информация о тесте')
+        self.title('Журнал тестирований')
         self.geometry('830x300+420+220')
         self.resizable(False, False)
 
@@ -165,7 +165,7 @@ class ViewGradeBookForm(tk.Toplevel):
         self.students_tree.heading('variant_id', text='Вариант теста')
         self.students_tree.heading('grade', text='Отметка')
 
-        self.students_tree.place(x=20, y=60)
+        self.students_tree.place(x=20, y=100)
         self.scrollbar_students = tk.Scrollbar(self)
         self.scrollbar_students.place(x=815, y=120)
         # первая привязка
